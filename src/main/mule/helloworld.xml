@@ -9,6 +9,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	</http:listener-config>
 	<flow name="helloworldFlow" doc:id="5a5c57c6-7e4f-46e7-97f8-56985fb0ba45" >
 		<http:listener doc:name="Listener" doc:id="e053c4e2-2474-469a-8f69-ecd3fac4af79" path="/hello" config-ref="HTTP_Listener_config"/>
+		<set-payload value="my second commit" doc:name="Set Payload" doc:id="99de8d4b-ded3-479c-9a75-a1e595ec6654" />
 		<logger level="INFO" doc:name="Logger" doc:id="7adb4240-8d80-4212-bd34-1b032f5b4888" message="hello mule app"/>
 	</flow>
 </mule>
